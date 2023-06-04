@@ -5,14 +5,14 @@ import { Bars3Icon,  XMarkIcon } from '@heroicons/react/24/outline'
 import {NavLink} from 'react-router-dom'
 
 const navigation = [
-  { name: 'Inicio', href: '#', current: true },
-  { name: 'PseudoCodigo', href: '#', current: false },
+  { name: 'Inicio', href: '/', current: true },
+  { name: 'PseudoCodigo', href: './pseudocodigo', current: false },
   { name: 'C/C++', href: '#', current: false },
 ]
 
 const NavBar:React.FC=()=> {
   return (
-    <Disclosure as="nav" className="bg-gray-800 ">
+    <Disclosure as="nav" className="bg-gray-800  ">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -38,7 +38,7 @@ const NavBar:React.FC=()=> {
                       <NavLink
                         key={item.name}
                         to={item.href}
-                        className=' text-white text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'
+                        className=' text-white  hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'
 
                       >
                         {item.name}

@@ -1,4 +1,5 @@
-import React from 'react'
+import { Link } from "react-router-dom"
+
 const Inicio = () => {
   return (
     <div>
@@ -10,7 +11,7 @@ const Inicio = () => {
                 <p className="sm:text-lg text-white dark:text-gray-300 lg:w-11/12 tituloP">
                  En el corazón de la programación se encuentra el concepto de los algoritmos. Los algoritmos son una secuencia ordenada de instrucciones que permiten resolver un problema o llevar a cabo una tarea específica. Son la base fundamental para el desarrollo de software y representan la esencia misma de la lógica de programación.
                 </p>
-                <span className="block font-semibold text-gray-500 dark:text-gray-400">Todos los algoritmos disponibles.</span>
+                <span className="block font-semibold text-gray-500 dark:text-gray-400 animacionD">Todos los algoritmos disponibles.</span>
                 
 
                 <article  className="cursos">
@@ -24,7 +25,10 @@ const Inicio = () => {
                             <span className="block text-xs uppercase text-blue-400">PseudoCodigo</span>
                         </div>
                         <div className="w-1/3">
-                            <span className="float-right text-xs bg-blue-900 rounded px-2 py-1 text-white">Active</span>
+                            <Link to={'/pseudocodigo'}>
+                                <span className="float-right text-xs bg-blue-900 rounded px-2 py-1 text-white">Iniciar</span>
+                            </Link>
+                            
                         </div>
                         </div>
                         <div className="py-4 text-sm text-white">

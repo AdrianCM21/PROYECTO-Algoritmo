@@ -32,6 +32,10 @@
     animation-duration: 1500ms;
     animation-name: aparece;
 }
+.animacionD{
+    animation-duration: 1500ms;
+    animation-name: derecha;
+}
 .texto{
     width: 80vw;
     margin:  auto;
