@@ -1,7 +1,36 @@
-
+/* animaciones */
+@keyframes derecha {
+    from{
+        transform: translateX(14em);
+    }
+    to{
+        transform: translateX(0em);
+    }
+}
+@keyframes aparece {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+@keyframes izquierdo {
+    from{
+        transform: translateX(-14em);
+    }
+    to{
+        transform: translateX(0em);
+    }
+}
+/* css */
 .pcontainer{
     background-color: #232e49;
     
+}
+.imagen{
+    animation-duration: 1500ms;
+    animation-name: aparece;
 }
 .texto{
     width: 80vw;
@@ -13,10 +42,20 @@
 }
 .tituloP{
     color: aliceblue;
-    font-size: 2em;
-    font-weight: 800;
+    animation-duration: 1900ms;
+    animation-name: derecha;
 }
 .textoP{
     color: aliceblue;
     font-size: 1em;
+    animation-duration: 1900ms;
+    animation-name: izquierdo;
+}
+section{
+    padding-top: 3em;
+}
+
+.cuadro{
+    display: flex;
+    justify-content: center;
 }
