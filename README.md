@@ -1,4 +1,4 @@
 # PROYECTO-Algoritmo
 
-### Pantalla principal del proyecto Inicio
+### Pantalla de Inicio
 ![Inicio proyecto](/Image/ImagenInicio.png)
